@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    var lat1=4;
+    var lat2=4;
+    var lat3=4;
+var esteTriunghi = (lat1 + lat2 > lat3) && (lat1 + lat3 > lat2) && (lat2 + lat3 > lat1);
+if(esteTriunghi){
+    if((lat1==lat2) && (lat2==lat3)){
+        console.log("Triunghi echilateral");
+    } else if((lat1!=lat2) && (lat2!=lat3) && (lat1!=lat3)){
+        console.log("Triunghi oarecare");
+    } else {
+        console.log("Triunghi isoscel");
+    }
+} else {
+    console.log("Nu formeaza triunghi");
+}
+</script>
+</head>
+</html>
